@@ -229,7 +229,7 @@ textarea:valid+label {
           <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
         </div>
         <div class="link">
-          <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+          <a href="https://github.com/SubinayPal/E-PaymentSecuritySystemProject"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
         </div>
         <!-- <div class="link">
           <a><img src="" alt=""></a>
