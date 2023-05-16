@@ -2,12 +2,23 @@
     pageEncoding="ISO-8859-1"%>
     
 <%@ page import="java.sql.Timestamp" import="java.time.Instant" %>
+<%@page import="java.util.Date" %>
+<%@page import="java.text.SimpleDateFormat" %>
+
+
 <% Timestamp ts1 = Timestamp.from(Instant.now());  
 
 	String uid=(String)session.getAttribute("uid");
 	//System.out.println(uid);
    
    //System.out.println("Timestamp : "+ts1);
+   
+   // Date in a form of dd-mm-yy
+   
+   SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yy");
+   Date currentDate = new Date();
+   String formattedDate = dateFormat.format(currentDate);
+   
 %>   
 
 
@@ -16,7 +27,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Transaction Page</title>
 
 <style>
 
@@ -255,6 +266,7 @@ body{
           <input type="text" class="date-number-field" 
                  placeholder="DD-MM-YY" 
                  name="date"
+                 value=<%=formattedDate %> readonly
                  />
         </div>
         <br />

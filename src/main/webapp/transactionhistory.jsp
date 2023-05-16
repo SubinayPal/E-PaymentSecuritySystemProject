@@ -76,12 +76,33 @@ h1{
   }
 }
 
-table{
-	border: 2px solid black;
-	background-color: white;
-	width: 75%;
-	
+table {
+  border-collapse: collapse;
+  width: 75%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #111;
+  color: grey;
+}
+
 
 
 </style>

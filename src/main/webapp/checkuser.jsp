@@ -19,7 +19,9 @@
 			response.sendRedirect("userDashboard.jsp");	
 		}
 		else{
+			response.sendRedirect("dashboard.jsp");
 			
 		}
 	//System.out.println(b);
 %>
+
